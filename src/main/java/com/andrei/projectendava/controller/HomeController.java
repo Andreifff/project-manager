@@ -24,7 +24,7 @@ public class HomeController {
     EmployeeRepository empRepo;
 
 
-    @GetMapping("/")
+    @GetMapping(value={"/","/home"})
     public String displayHome(Model model){
 
 

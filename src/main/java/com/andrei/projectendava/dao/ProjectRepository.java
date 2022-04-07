@@ -12,9 +12,4 @@ public interface ProjectRepository extends CrudRepository<Project, Long> {
     @Override
     public List<Project> findAll();
 
-    String sqlQuery="SELECT stage as label, cOUNT(*) as value" +
-            "FROM project" +
-            "GROUP BY stage";
-
-
 }
